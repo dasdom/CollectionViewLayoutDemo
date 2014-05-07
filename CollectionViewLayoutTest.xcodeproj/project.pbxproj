@@ -19,6 +19,10 @@
 		F23C1EB41879A57E00CFE7FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23C1E9C1879A57E00CFE7FC /* UIKit.framework */; };
 		F23C1EBC1879A57E00CFE7FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F23C1EBA1879A57E00CFE7FC /* InfoPlist.strings */; };
 		F23C1EBE1879A57E00CFE7FC /* CollectionViewLayoutTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F23C1EBD1879A57E00CFE7FC /* CollectionViewLayoutTestTests.m */; };
+		F23C1ECE1879A5DC00CFE7FC /* DDHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23C1EC81879A5DC00CFE7FC /* DDHCollectionViewCell.m */; };
+		F23C1ECF1879A5DC00CFE7FC /* DDHCollectionViewDelegateAndDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F23C1ECA1879A5DC00CFE7FC /* DDHCollectionViewDelegateAndDataSource.m */; };
+		F23C1ED01879A5DC00CFE7FC /* DDHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23C1ECD1879A5DC00CFE7FC /* DDHViewController.m */; };
+		F23C1ED31879D4B200CFE7FC /* DDHRecipeCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F23C1ED21879D4B200CFE7FC /* DDHRecipeCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,15 @@
 		F23C1EB91879A57E00CFE7FC /* CollectionViewLayoutTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollectionViewLayoutTestTests-Info.plist"; sourceTree = "<group>"; };
 		F23C1EBB1879A57E00CFE7FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F23C1EBD1879A57E00CFE7FC /* CollectionViewLayoutTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewLayoutTestTests.m; sourceTree = "<group>"; };
+		F23C1EC71879A5DC00CFE7FC /* DDHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHCollectionViewCell.h; sourceTree = "<group>"; };
+		F23C1EC81879A5DC00CFE7FC /* DDHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHCollectionViewCell.m; sourceTree = "<group>"; };
+		F23C1EC91879A5DC00CFE7FC /* DDHCollectionViewDelegateAndDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHCollectionViewDelegateAndDataSource.h; sourceTree = "<group>"; };
+		F23C1ECA1879A5DC00CFE7FC /* DDHCollectionViewDelegateAndDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHCollectionViewDelegateAndDataSource.m; sourceTree = "<group>"; };
+		F23C1ECB1879A5DC00CFE7FC /* DDHRegisterCellsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHRegisterCellsProtocol.h; sourceTree = "<group>"; };
+		F23C1ECC1879A5DC00CFE7FC /* DDHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHViewController.h; sourceTree = "<group>"; };
+		F23C1ECD1879A5DC00CFE7FC /* DDHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHViewController.m; sourceTree = "<group>"; };
+		F23C1ED11879D4B200CFE7FC /* DDHRecipeCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHRecipeCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		F23C1ED21879D4B200CFE7FC /* DDHRecipeCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHRecipeCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +122,15 @@
 			children = (
 				F23C1EA71879A57E00CFE7FC /* DDHAppDelegate.h */,
 				F23C1EA81879A57E00CFE7FC /* DDHAppDelegate.m */,
+				F23C1EC71879A5DC00CFE7FC /* DDHCollectionViewCell.h */,
+				F23C1EC81879A5DC00CFE7FC /* DDHCollectionViewCell.m */,
+				F23C1EC91879A5DC00CFE7FC /* DDHCollectionViewDelegateAndDataSource.h */,
+				F23C1ECA1879A5DC00CFE7FC /* DDHCollectionViewDelegateAndDataSource.m */,
+				F23C1ED11879D4B200CFE7FC /* DDHRecipeCollectionViewFlowLayout.h */,
+				F23C1ED21879D4B200CFE7FC /* DDHRecipeCollectionViewFlowLayout.m */,
+				F23C1ECB1879A5DC00CFE7FC /* DDHRegisterCellsProtocol.h */,
+				F23C1ECC1879A5DC00CFE7FC /* DDHViewController.h */,
+				F23C1ECD1879A5DC00CFE7FC /* DDHViewController.m */,
 				F23C1EAA1879A57E00CFE7FC /* Images.xcassets */,
 				F23C1E9F1879A57E00CFE7FC /* Supporting Files */,
 			);
@@ -240,8 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23C1ED01879A5DC00CFE7FC /* DDHViewController.m in Sources */,
 				F23C1EA51879A57E00CFE7FC /* main.m in Sources */,
 				F23C1EA91879A57E00CFE7FC /* DDHAppDelegate.m in Sources */,
+				F23C1ECE1879A5DC00CFE7FC /* DDHCollectionViewCell.m in Sources */,
+				F23C1ECF1879A5DC00CFE7FC /* DDHCollectionViewDelegateAndDataSource.m in Sources */,
+				F23C1ED31879D4B200CFE7FC /* DDHRecipeCollectionViewFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
